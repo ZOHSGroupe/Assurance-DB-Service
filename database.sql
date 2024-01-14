@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS driver_license (
 
 CREATE TABLE IF NOT EXISTS assurance (
     id VARCHAR(36) PRIMARY KEY,
-    date_create NOT NULL TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_create  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     status ENUM('Active', 'Inactive', 'Suspended') NOT NULL,
     type ENUM('Tout risque', 'responsabilite civil') NOT NULL,
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS assurance (
 
 CREATE TABLE IF NOT EXISTS notification (
     id VARCHAR(36) PRIMARY KEY,
-    date_notification NOT NULL TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    date_notification  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     message VARCHAR(255) NOT NULL,
     status ENUM('Read', 'Unread','Archivied','stared') NOT NULL,
     client_id VARCHAR(36) NOT NULL,
