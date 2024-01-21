@@ -1,7 +1,7 @@
 -- create assurance_db
-CREATE DATABASE IF NOT EXISTS assurance_db;
+CREATE DATABASE IF NOT EXISTS assurance;
 -- use assurance_db
-USE assurance_db;
+USE assurance;
 
 -- create table client
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS vehicule (
     empty_weight DECIMAL(8,2) NOT NULL,
     fuel_type VARCHAR(50) NOT NULL,
     genre VARCHAR(50) NOT NULL,
-    gross_vehicle_weight_rating DECIMAL(10,2) NOT NULL,
+    gross_vehicule_weight_rating DECIMAL(10,2) NOT NULL,
     license_plate_number VARCHAR(20) NOT NULL,
     manufacturing_date DATE NOT NULL,
     marque VARCHAR(50) NOT NULL,
