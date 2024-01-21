@@ -47,8 +47,8 @@ $ docker run -p 3306:3306 my-assurance-db
     status: ENUM('Active', 'Inactive', 'Suspended') NOT NULL
     tax_horsepower: INT NOT NULL
     tax_identification_number: VARCHAR(20) NOT NULL
-    type_vehicle: ENUM('Car', 'Motor', 'Camion') NOT NULL
-    vehicle_identification_number: VARCHAR(50) NOT NULL
+    type_vehicule: ENUM('Car', 'Motor', 'Camion') NOT NULL
+    vehicule_identification_number: VARCHAR(50) NOT NULL
     client_id: VARCHAR(36) NOT NULL, FOREIGN KEY (client_id) REFERENCES client(id)
 
 ### Table: driver_license

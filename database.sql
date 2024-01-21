@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS vehicule (
     status ENUM('Active', 'Inactive', 'Suspended') NOT NULL,
     tax_horsepower INT NOT NULL,
     tax_identification_number VARCHAR(20) NOT NULL,
-    type_vehicle ENUM('Car', 'Motor', 'Camion') NOT NULL,
-    vehicle_identification_number VARCHAR(50) NOT NULL,
+    type_vehicule ENUM('Car', 'Motor', 'Camion') NOT NULL,
+    vehicule_identification_number VARCHAR(50) NOT NULL,
     client_id VARCHAR(36) NOT NULL,
     FOREIGN KEY (client_id) REFERENCES client(id)
 );
