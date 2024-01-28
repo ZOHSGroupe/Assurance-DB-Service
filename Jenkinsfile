@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         // Customize these variables based on your project
-        DOCKER_HUB_REPO = 'ouail02/admin-service'
+        DOCKER_HUB_REPO = 'ouail02/mysql-zohs-service'
         SPRING_PROFILES_ACTIVE = 'production'
         BRANCH = 'main'
         Git_REPO = 'https://github.com/ZOHSGroupe/Assurance-DB-Service'
